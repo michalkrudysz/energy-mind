@@ -1,0 +1,74 @@
+@import "fonts.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  padding-bottom: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgb(71, 45, 166);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(71, 45, 166, 1) 40%,
+    rgba(104, 65, 242, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(71, 45, 166, 1) 40%,
+    rgba(104, 65, 242, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(71, 45, 166, 1) 40%,
+    rgba(104, 65, 242, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#472da6",endColorstr="#6841f2",GradientType=1);
+
+  #logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+
+    img {
+      width: 120px;
+      border-radius: 50%;
+      -webkit-box-shadow: -7px 1px 48px -16px rgba(66, 68, 90, 1);
+      -moz-box-shadow: -7px 1px 48px -16px rgba(66, 68, 90, 1);
+      box-shadow: -7px 1px 48px -16px rgba(66, 68, 90, 1);
+    }
+  }
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: #6841f2;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  font-family: "Barlow-Light", sans-serif;
+  font-weight: 100;
+  font-size: 0.95em;
+  letter-spacing: 0.3px;
+  -webkit-box-shadow: 1px 2px 22px -4px rgba(71, 45, 166, 1);
+  -moz-box-shadow: 1px 2px 22px -4px rgba(71, 45, 166, 1);
+  box-shadow: 1px 2px 22px -4px rgba(71, 45, 166, 1);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
