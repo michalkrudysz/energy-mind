@@ -32,7 +32,10 @@ body {
     rgba(104, 65, 242, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#472da6",endColorstr="#6841f2",GradientType=1);
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   #logo {
     position: relative;
     display: flex;

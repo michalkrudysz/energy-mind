@@ -1,0 +1,66 @@
+.data-entry-form {
+  width: 100%;
+  padding: 1em;
+  margin-top: 1em;
+  background-color: #0d0d0dd0;
+  border-radius: 5px;
+  box-shadow: -2px 3px 37px -16px rgba(66, 68, 90, 1);
+  -webkit-box-shadow: -2px 3px 37px -16px rgba(66, 68, 90, 1);
+  -moz-box-shadow: -2px 3px 37px -16px rgba(66, 68, 90, 1);
+  font-family: "Barlow", sans-serif;
+  font-size: 1em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .input-section {
+    width: 50em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .input {
+      width: 50%;
+      height: 100%;
+      margin: 0.5em 1em;
+      display: flex;
+      flex-direction: column;
+      font-family: inherit;
+      font-size: 1.05em;
+
+      .subtext {
+        margin-top: 0.05em;
+        margin-bottom: 0.8em;
+        font-family: "Barlow";
+        font-size: 0.8em;
+        font-style: italic;
+        font-weight: 900;
+        letter-spacing: 0.1em;
+      }
+
+      span {
+        text-align: center;
+      }
+
+      input {
+        margin: 0;
+        padding: 0.4em;
+        border: 1.5px solid #f2d541;
+        border-radius: 5px;
+        background: none;
+        outline: none;
+        box-shadow: none;
+        font-size: 1em;
+        color: white;
+        font-family: inherit;
+
+        &::placeholder {
+          color: white;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
