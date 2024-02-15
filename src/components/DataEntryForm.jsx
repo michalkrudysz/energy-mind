@@ -1,10 +1,13 @@
 import "./DataEntryForm.scss";
 
 export default function DataEntryForm({
-  initialEnergyConsumption,
-  percentageReductionInConsumption,
-  electricityCost,
-  term,
+  inputs: {
+    initialEnergyConsumption,
+    percentageReductionInConsumption,
+    electricityCost,
+    term,
+  },
+  handleInputChange,
 }) {
   return (
     <div className="data-entry-form">
@@ -17,6 +20,12 @@ export default function DataEntryForm({
             min="1"
             max="30000"
             placeholder={initialEnergyConsumption}
+            onChange={(e) =>
+              handleInputChange(
+                "initialEnergyConsumption",
+                Number(e.target.value)
+              )
+            }
           ></input>
         </div>
 
@@ -28,6 +37,12 @@ export default function DataEntryForm({
             min="0"
             max="100"
             placeholder={percentageReductionInConsumption}
+            onChange={(e) =>
+              handleInputChange(
+                "percentageReductionInConsumption",
+                Number(e.target.value)
+              )
+            }
           ></input>
         </div>
       </div>
@@ -42,6 +57,9 @@ export default function DataEntryForm({
             max="100"
             id="electricity-cost"
             placeholder={electricityCost}
+            onChange={(e) =>
+              handleInputChange("electricityCost", Number(e.target.value))
+            }
           ></input>
         </div>
         <div className="input">
@@ -53,6 +71,7 @@ export default function DataEntryForm({
             max="12"
             id="term"
             placeholder={term}
+            onChange={(e) => handleInputChange("term", Number(e.target.value))}
           ></input>
         </div>
       </div>
